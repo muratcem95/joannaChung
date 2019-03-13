@@ -7,79 +7,17 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen and (min-device-width:415px)" href="index.css"/>
+        <link rel="stylesheet" media="screen and (max-device-width:414px)" href="indexPhone.css"/>
         <title>Joanna Chung</title>
-        <style>
-            body{
-                background-color:whitesmoke;
-            }
-            .mint{
-                border-color:#2fdab8;
-            }
-            #shapes{
-                height:200px;
-                margin-top:10px;
-                margin-bottom:40px;
-            }
-            #circ{
-                width:200px;
-                height:200px;
-                border-radius:10%;
-                border:2px solid #404350;
-            }
-            #rect{
-                height:150px;
-                background-color:#404350;
-                color:whitesmoke;
-                text-align:center;
-            }
-            .contactEle:hover{
-                cursor:pointer;
-            }
-            .btn{
-                background-color:#2fdab8;
-                border-color:#2fdab8;
-                color:#404350;
-            }
-            .btn:hover{
-                background-color:#2fdab8;
-                border-color:#2fdab8;
-                color:#404350;
-            }
-            #left{
-                width:200px;
-                background-color:#F2E7DB;
-                border-radius:5px;
-                border:2px solid grey;
-                padding:10px;
-            }
-            .miniLine{
-                margin-top:-10px;
-                border-color:#404350;
-            }
-            .fa-star{
-                font-size:80%; 
-            }
-            .fa-star-half-alt{
-                font-size:80%;
-            }
-            .miniList{
-                margin-left:-23px;
-            }
-            .header{
-                margin-bottom:-7px;
-            }
-            .alert{
-                display:none; 
-            }
-        </style>
     </head>
     <body>
         <div class="container">
             <div id="shapes" class="row d-flex align-items-center">
                 <img id="circ" src="profileImage.jpg">
                 <div id="rect" class="col">
-                    <h1 class="display-4">Joanna CHUNG</h1>
-                    <h4 class="lead" style="color:#2fdab8;">Bilingual Digital Account Coordinator / Manager</h4>
+                    <h1 class="display-4" id="phoneTitle">Joanna CHUNG</h1>
+                    <h4 class="lead" id="phonePosition" style="color:#2fdab8;">Bilingual Digital Account Coordinator / Manager</h4>
                     <div id="contact">
                         <i class="contactEle fas fa-phone-square" data-toggle="modal" data-target="#contactModal"></i>
                         <i class="contactEle fas fa-envelope-square" data-toggle="modal" data-target="#contactModal"></i>
@@ -186,7 +124,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <embed type="application/pdf" src="cv.pdf" width="466" height="500">
+                        <object data="cv.pdf" type="application/pdf" width="466" height="500"></object>
                     </div>
                 </div>
             </div>
