@@ -33,6 +33,10 @@ body{
 .contactEle:hover{
     cursor:pointer;
 }
+#cvBtn{
+    text-decoration:none;
+    color:#404350;
+}
 .btn{
     background-color:#2fdab8;
     border-color:#2fdab8;
