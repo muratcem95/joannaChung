@@ -2,7 +2,6 @@ const path=require('path');
 const http=require('http');
 const express=require('express');
 const bodyParser=require('body-parser');
-//const hbs = require('hbs');
 const nodemailer=require('nodemailer');
 const viewsPath=path.join(__dirname,'../views');
 const port=process.env.PORT || 3000;
@@ -16,11 +15,6 @@ const transporter=nodemailer.createTransport({
     }
 });
 app.set('views',viewsPath);  
-//app.set('view engine', 'html');
-//app.engine('html', require('hbs').__express);
-//app.get('/', (req, res) => {
-//    res.redirect('/');
-//});
 app.use(express.static(viewsPath));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -30,7 +24,7 @@ app.get('/',(req,res)=>{
 app.post('/contactForm',(req,res)=>{
     var mailOptions={
         from:'muratcem95@gmail.com',
-        to:'muratcem95@gmail.com',
+        to:'joannac95@gmail.com',
         subject:'Web Page Contact Request',
         html:`<p><b>Name:</b> ${req.body.name}<br><b>Email address:</b> ${req.body.email}</p><p><b>Message:</b> ${req.body.message}</p>`
     };
