@@ -21,6 +21,10 @@ body{
     color:whitesmoke;
     text-align:center;
 }
+#cvBtn{
+    text-decoration:none;
+    color:#404350;
+}
 .contactEle:hover{
     cursor:pointer;
 }
