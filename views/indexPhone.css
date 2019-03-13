@@ -21,6 +21,9 @@ body{
     color:whitesmoke;
     text-align:center;
 }
+.clickable{
+    cursor:pointer;
+}
 #phoneTitle{
     font-size:80%; 
 }
