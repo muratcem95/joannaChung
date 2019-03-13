@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <title>Joanna Chung</title>
+        <style>
+            body{
+                background-color:whitesmoke;
+            }
+            .mint{
+                border-color:#2fdab8;
+            }
+            #shapes{
+                height:200px;
+                margin-top:10px;
+                margin-bottom:40px;
+            }
+            #circ{
+                width:200px;
+                height:200px;
+                border-radius:16%;
+                background-color:#2fdab8;
+                border:2px solid #404350;
+            }
+            #rect{
+                height:150px;
+                background-color:#404350;
+                color:whitesmoke;
+                text-align:center;
+            }
+            .contactEle:hover{
+                cursor:pointer;
+            }
+            .btn{
+                background-color:#2fdab8;
+                border-color:#2fdab8;
+                color:#404350;
+            }
+            .btn:hover{
+                background-color:#2fdab8;
+                border-color:#2fdab8;
+                color:#404350;
+            }
+            #left{
+                width:200px;
+                background-color:#F2E7DB;
+                border-radius:5px;
+                border:2px solid grey;
+                padding:10px;
+            }
+            .miniLine{
+                margin-top:-10px;
+                border-color:#404350;
+            }
+            .fa-star{
+                font-size:80%; 
+            }
+            .fa-star-half-alt{
+                font-size:80%;
+            }
+            .miniList{
+                margin-left:-23px;
+            }
+            .header{
+                margin-bottom:-7px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="shapes" class="row d-flex align-items-center">
+                <img id="circ" src="profileImage.jpg">
+                <div id="rect" class="col">
+                    <h1 class="display-4">Joanna CHUNG</h1>
+                    <h4 class="lead" style="color:#2fdab8;">Bilingual Digital Account Coordinator / Manager</h4>
+                    <div id="contact">
+                        <i class="contactEle fas fa-phone-square" data-toggle="modal" data-target="#contactModal"></i>
+                        <i class="contactEle fas fa-envelope-square" data-toggle="modal" data-target="#contactModal"></i>
+                        <span>~</span>
+                        <a href="https://www.linkedin.com/in/joanna-chung-12a528a7/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/jc_perspectives/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Jo.Mimp"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://justagirloutthere.wixsite.com/diveinwithme"><i class="fas fa-blog"></i></a>
+                        <span>~</span>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#cvModal">CV</button>
+                    </div>
+                </div>
+            </div> 
+            <div id="content" class="row">
+                <div id="left">
+                    <p class="text-center"><b>Languages</b></p>
+                    <hr class="miniLine">
+                    <p>French<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p>English<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p>Kreole<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p class="text-center"><b>Skills</b></p>
+                    <hr class="miniLine">
+                    <p>Organization<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p>Customer Service<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p>Microsoft Excel<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="far fa-1x fa-star"></i></span></p>
+                    <p>Microsoft Office<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p>Client Management<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star-half-alt"></i></span></p>
+                    <p>Confident and Friendly Manner<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p>Leadership and Teamwork<br><span><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i><i class="fas fa-1x fa-star"></i></span></p>
+                    <p class="text-center"><b>Hobbies</b></p>
+                    <hr class="miniLine">
+                    <ul>
+                    <li class="miniList">Artist in many ways: Photography, Drawing, Graphic and Web Design, Creative Writing.></li>
+                    <li class="miniList">Martial Arts (Muay Thai & Brazilian Jiu Jitsu)</li>
+                    <li class="miniList">Rock Climbing</li>
+                    </ul>
+                </div>
+                <div id="right" class="col">
+                    <p class="header"><b>P R O F I L E</b></p>
+                    <hr class="mint">
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc</p>
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc.</p>
+                    <p class="header"><b>E M P L O Y M E N T H I S T O R Y</b></p>
+                    <hr class="mint">
+                    <p class="small"><b>Bilingual Account Coordinator / Manager | <i>Elite Digital Inc.</i></b> <span style="float:right;">Sep 2017 - Present</span></p>
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc. I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc.</p>
+                    <p class="small"><b>Bilingual Account Coordinator / Manager | <i>Elite Digital Inc.</i></b> <span style="float:right;">Sep 2017 - Present</span></p>
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc. I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc.</p>
+                    <p class="small"><b>Bilingual Account Coordinator / Manager | <i>Elite Digital Inc.</i></b> <span style="float:right;">Sep 2017 - Present</span></p>
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc. I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc.</p>
+                    <p class="header"><b>E D U C A T I O N</b></p>
+                    <hr class="mint">
+                    <p class="small"><b>YORK Univeristy | <i>Glendon Campus</i></b> <span style="float:right;">Sep 2013 - June 2017</span></p>
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc. I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc.</p>
+                    <p class="small"><b>Bilingual Account Coordinator / Manager | <i>Elite Digital Inc.</i></b> <span style="float:right;">Sep 2017 - Present</span></p>
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc. I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc.</p>
+                    <p class="small"><b>Bilingual Account Coordinator / Manager | <i>Elite Digital Inc.</i></b> <span style="float:right;">Sep 2017 - Present</span></p>
+                    <p class="small">I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc. I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc I was always been to these classes. Sinc.</p>
+                </div>    
+            </div>
+        </div>    
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Contact Me</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Phone Number:</b> +1 647 879 8870</p>
+                        <p><b>Email:</b> joannac95@gmail.com</p>
+                        <hr>
+                        <p>Can also reach me with the following form:</p>
+                        <form method="post" action="contactForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email address *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your message *" required></textarea>
+                            </div>
+                            <div class="text-center"><button class="btn btn-sm" type="submit">Send</button></div>
+                        </form>
+                        <hr>
+                        <p class="text-center"><i>Thanks for contacting!<br>I will get back to you very soon! :)</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">CV</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed type="application/pdf" src="cv.pdf" width="466" height="500">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
