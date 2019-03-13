@@ -32,7 +32,7 @@ app.post('/contactForm',(req,res)=>{
         from:'muratcem95@gmail.com',
         to:'muratcem95@gmail.com',
         subject:'Web Page Contact Request',
-        html:`<p><b>Name:</b> ${req.body.name}</p><p><b>Email address:</b> ${req.body.email}</p><p><b>Message:</b> ${req.body.message}</p>`
+        html:`<p><b>Name:</b> ${req.body.name}<br><b>Email address:</b> ${req.body.email}</p><p><b>Message:</b> ${req.body.message}</p>`
     };
     transporter.sendMail(mailOptions,function(error,info){
         if(error){
@@ -41,6 +41,5 @@ app.post('/contactForm',(req,res)=>{
             console.log('Email sent:'+info.response);
         }
     });
-    res.redirect('/');
 });
 server.listen(port,()=>console.log(`Server is up on port ${port}`));

@@ -68,6 +68,8 @@
             }
             .header{
                 margin-bottom:-7px;
+            }.alert{
+                display:none; 
             }
         </style>
     </head>
@@ -150,11 +152,14 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p><b>Phone Number:</b> +1 647 879 8870</p>
-                        <p><b>Email:</b> joannac95@gmail.com</p>
+                        <p><i><b>Phone Number:</b> +1 647 879 8870</i></p>
+                        <p><i><b>Email:</b> joannac95@gmail.com</i></p>
                         <hr>
-                        <p>Can also reach me with the following form:</p>
-                        <form method="post" action="contactForm">
+                        <p style="font-size:80%;">Can also reach me with the following form:</p>
+                        <div class="alert alert-warning text-center" role="alert">
+                            <p>Thank you <span id="contacterName"></span> for contacting me!<br>Will get back to you in no time :)</p>
+                        </div>
+                        <form method="post" id="contactForm" action="/contactForm">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Your name *" required>
                             </div>
@@ -164,10 +169,8 @@
                             <div class="form-group">
                                 <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your message *" required></textarea>
                             </div>
-                            <div class="text-center"><button class="btn btn-sm" type="submit">Send</button></div>
+                            <div class="text-center"><button class="btn btn-sm" type="submit" style="background-color:#404350; border-color:#404350; color:whitesmoke;">Send</button></div>
                         </form>
-                        <hr>
-                        <p class="text-center"><i>Thanks for contacting!<br>I will get back to you very soon! :)</i></p>
                     </div>
                 </div>
             </div>
@@ -193,5 +196,14 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            $("#contactForm").submit(function(){
+                $("#contacterName").html("<b><u>"+$("#name").val()+"</u></b>");
+                $(".alert").css("display","block");
+                window.setTimeout(function(){
+                    window.location.href="/";
+                },3000);
+            })
+        </script>
     </body>
 </html>
