@@ -2,6 +2,9 @@ body{
     background-color:whitesmoke;
     color:#404350;
 }
+.container{
+    background-color:white;
+}
 ul {
   list-style: none; /* Remove default bullets */
 }
@@ -18,21 +21,22 @@ ul li::before {
     border-color:#98DBDD;
 }
 #shapes{
-    height:230px;
-    margin-top:10px;
-    margin-bottom:40px;
+    margin-bottom:15px;
 }
 #circ{
-    width:230px;
-    height:230px;
-    border-radius:10%;
+    width:200px;
+    height:200px;
+    border-radius:50%;
     border:2px solid #404350;
+    margin-top:30px;
+    margin-bottom:10px;
 }
 #rect{
-    height:175px;
-    background-color:#98DBDD;
-    color:#404350;
     text-align:center;
+    margin-bottom:20px;
+}
+#phoneTitle{
+    font-size:300%;
 }
 #cvBtn{
     text-decoration:none;
@@ -53,9 +57,8 @@ ul li::before {
 }
 #left{
     width:200px;
-    background-color:#B7DCC7;
+    background-color:#98DBDD;
     border-radius:5px;
-    border:2px solid grey;
     padding:10px;
 }
 .miniLine{
