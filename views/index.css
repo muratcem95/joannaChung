@@ -1,63 +1,78 @@
 body{
     background-color:whitesmoke;
+    color:#404350;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color:#B7DCC7; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 .mint{
-    border-color:#2fdab8;
+    border-color:#98DBDD;
 }
 #shapes{
-    height:200px;
+    height:230px;
     margin-top:10px;
     margin-bottom:40px;
 }
 #circ{
-    width:200px;
-    height:200px;
+    width:230px;
+    height:230px;
     border-radius:10%;
     border:2px solid #404350;
 }
 #rect{
-    height:150px;
-    background-color:#404350;
-    color:whitesmoke;
+    height:175px;
+    background-color:#98DBDD;
+    color:#404350;
     text-align:center;
 }
 #cvBtn{
     text-decoration:none;
-    color:#404350;
+    color:whitesmoke;
 }
 .contactEle:hover{
     cursor:pointer;
 }
 .btn{
-    background-color:#2fdab8;
-    border-color:#2fdab8;
-    color:#404350;
+    background-color:#404350;
+    border-color:#404350;;
+    color:whitesmoke;
 }
 .btn:hover{
-    background-color:#2fdab8;
-    border-color:#2fdab8;
-    color:#404350;
+    background-color:#404350;
+    border-color:#404350;;
+    color:whitesmoke;
 }
 #left{
     width:200px;
-    background-color:#F2E7DB;
+    background-color:#B7DCC7;
     border-radius:5px;
     border:2px solid grey;
     padding:10px;
 }
 .miniLine{
     margin-top:-10px;
-    border-color:#404350;
+    border-color:gray;
 }
-.fa-star{
-    font-size:80%; 
+.fa-circle{
+    font-size:40%; 
 }
-.fa-star-half-alt{
-    font-size:80%;
+.fa-dot-circle{
+    font-size:40%;
 }
+/*
 .miniList{
     margin-left:-23px;
 }
+*/
 .header{
     margin-bottom:-7px;
 }
