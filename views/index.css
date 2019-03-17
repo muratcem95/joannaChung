@@ -105,3 +105,13 @@ ul li::before {
 .alert{
     display:none; 
 }
+.modal-title{
+    font-family: 'Mr De Haviland', cursive;
+    font-size:300%;
+    margin-bottom:-20px;
+}
+textarea  
+{  
+    font-family:'Mr De Haviland', cursive;  
+    font-size:200% !important;
+}
