@@ -18,7 +18,7 @@ ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 .mint{
-    border-color:#98DBDD;
+    border-color:#B7DCC7;
 }
 #shapes{
     margin-bottom:15px;
@@ -63,7 +63,7 @@ ul li::before {
     font-size:70%;
     margin-right:20px;
     margin-left:20px;
-    border:2px solid #8CECE3;
+    border:2px solid #B7DCC7;
 }
 .miniLine{
     margin-top:-10px;
