@@ -22,13 +22,14 @@ ul li::before {
 }
 #mandala{
     text-align:center;
+    padding-top:75px;
 }
 #mandalaContent{
     position: relative;
-    top:-434px;
+    top:-570px;
 }
 #mandalaImg{
-    width:49%;
+    width:45%;
     opacity:0.3;
 }
 #shapes{
@@ -44,10 +45,6 @@ ul li::before {
 #rect{
     text-align:center;
     margin-bottom:20px;
-}
-#content{
-    position: relative;
-    top:-100px;
 }
 #phoneTitle{
     font-size:600%;
@@ -87,6 +84,9 @@ ul li::before {
 .miniLine{
     margin-top:-10px;
     border-color:gray;
+}
+.miniHeader{
+    margin-top:30px;
 }
 .fa-circle{
     font-size:40%; 
