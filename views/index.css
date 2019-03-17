@@ -104,14 +104,15 @@ ul li::before {
 }
 .alert{
     display:none; 
+    font-family:'Reenie Beanie', cursive;
+    font-size:150%;
 }
 .modal-title{
-    font-family: 'Mr De Haviland', cursive;
-    font-size:300%;
-    margin-bottom:-20px;
+    font-family: 'Rock Salt', cursive;
+    font-size:130%;
+    margin-bottom:-5px;
 }
 textarea  
 {  
-    font-family:'Mr De Haviland', cursive;  
-    font-size:200% !important;
+    font-family: 'Muli', sans-serif;
 }
