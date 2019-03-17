@@ -38,6 +38,9 @@ ul li::before {
 #phoneTitle{
     font-size:300%;
 }
+#phonePosition{
+    font-size:60%;
+}
 #cvBtn{
     text-decoration:none;
     color:whitesmoke;

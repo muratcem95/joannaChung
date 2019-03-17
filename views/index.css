@@ -20,8 +20,18 @@ ul li::before {
 .mint{
     border-color:#B7DCC7;
 }
+#mandala{
+    text-align:center;
+}
+#mandalaContent{
+    position: relative;
+    top:-434px;
+}
+#mandalaImg{
+    width:49%;
+    opacity:0.3;
+}
 #shapes{
-    margin-bottom:15px;
 }
 #circ{
     width:200px;
@@ -35,8 +45,16 @@ ul li::before {
     text-align:center;
     margin-bottom:20px;
 }
+#content{
+    position: relative;
+    top:-100px;
+}
 #phoneTitle{
-    font-size:300%;
+    font-size:600%;
+    font-family: 'Mr De Haviland', cursive;
+}
+#phonePosition{
+    font-size:110%;
 }
 #cvBtn{
     text-decoration:none;
@@ -59,6 +77,7 @@ ul li::before {
     width:200px;
     background-color:#DFF8F8;
     padding:10px;
+    color:grey;
     text-align:center;
     font-size:70%;
     margin-right:20px;
